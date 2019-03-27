@@ -138,6 +138,7 @@ body {
 h4 {
   font-size: 22px;
   font-weight: 500;
+  color: darkblue;
 }
 .container {
   display: flex;
@@ -154,7 +155,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   background-color: darkgray;
-  padding: 20px;
+  padding: 20px 40px;
 }
 .container .top-content {
   display: flex;
@@ -168,7 +169,6 @@ h4 {
   align-self: center;
 }
 .container .top-content .about {
-  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -207,11 +207,11 @@ h4 {
   width: 100%;
 }
 .container .bottom-content {
-  margin: 40px;
+  background-color: darkgray;
+  padding: 40px;
 }
 .container .contact-form {
   width: 100%;
-  border: 1px solid red;
   margin-top: 20px;
 }
 .container .contact-form input {
