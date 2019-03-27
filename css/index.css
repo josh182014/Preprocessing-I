@@ -135,6 +135,10 @@ body {
   height: 100%;
   background-color: lightgray;
 }
+h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +151,6 @@ body {
 }
 .container .header nav {
   width: 100%;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   margin: 20px;
@@ -160,6 +163,7 @@ body {
 .container .top-content .headshot {
   border: 1px solid green;
   width: 40%;
+  align-self: center;
 }
 .container .top-content .about {
   border: 1px solid blue;
@@ -167,7 +171,37 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   width: 60%;
+  margin-bottom: 30px;
+  align-self: center;
 }
 .container .top-content .skills {
   width: 80%;
+}
+.container .top-content .skills li {
+  border-top: 1px solid gray;
+  padding: 10px 0 10px 0;
+}
+.container .top-content .workHistoryTable,
+.container .top-content th,
+.container .top-content tr,
+.container .top-content td {
+  border: 1px solid black;
+  padding: 5px;
+  width: 100%;
+}
+.container .bottom-content {
+  margin: 20px;
+}
+.container .contact-form {
+  width: 100%;
+  border: 1px solid red;
+  margin-top: 20px;
+}
+.container .contact-form input {
+  padding: 9px 20px;
+  margin: 8px 0;
+}
+.container .contact-form .textarea {
+  height: 100px;
+  width: 50%;
 }
