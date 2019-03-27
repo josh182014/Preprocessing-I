@@ -153,12 +153,14 @@ h4 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  background-color: darkgray;
+  padding: 20px;
 }
 .container .top-content {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 40px;
+  justify-content: space-between;
 }
 .container .top-content .headshot {
   border: 1px solid green;
@@ -170,27 +172,42 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 60%;
+  width: 100%;
   margin-bottom: 30px;
   align-self: center;
 }
 .container .top-content .skills {
-  width: 80%;
+  width: 47%;
+}
+@media (max-width: 500px) {
+  .container .top-content .skills {
+    width: 100%;
+  }
 }
 .container .top-content .skills li {
   border-top: 1px solid gray;
   padding: 10px 0 10px 0;
+}
+.container .top-content .work-history {
+  width: 47%;
+}
+@media (max-width: 500px) {
+  .container .top-content .work-history {
+    width: 100%;
+  }
 }
 .container .top-content .workHistoryTable,
 .container .top-content th,
 .container .top-content tr,
 .container .top-content td {
   border: 1px solid black;
-  padding: 5px;
+  padding: 10px;
+}
+.container .top-content .workHistoryTable {
   width: 100%;
 }
 .container .bottom-content {
-  margin: 20px;
+  margin: 40px;
 }
 .container .contact-form {
   width: 100%;

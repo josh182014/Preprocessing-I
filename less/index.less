@@ -67,6 +67,7 @@ h4 {
 	flex-wrap: wrap;
 	margin: 0 auto;
 
+
 	.header {
 		display: flex;
 		flex-wrap: wrap;
@@ -76,14 +77,16 @@ h4 {
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
-			margin: 20px;
+			background-color: darkgray;
+			padding: 20px;
 		}
 	}
 
 	.top-content {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 20px;
+		margin: 40px;
+		justify-content: space-between;
 
 		.headshot {
 			border: 1px solid green;
@@ -96,13 +99,17 @@ h4 {
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: row;
-			width: 60%;
+			width: 100%;
 			margin-bottom: 30px;
 			align-self: center;
 		}
 
 		.skills {
-			width: 80%;
+			width: 47%;
+
+			@media ( max-width: 500px) {
+				width: 100%;
+			}
 
 			li {
 				border-top: 1px solid gray;
@@ -110,15 +117,26 @@ h4 {
 			}
 		}
 
+		.work-history {
+			width: 47%;
+
+			@media ( max-width: 500px ) {
+				width: 100%;
+			}
+		}
+
+
 		.workHistoryTable, th, tr, td {
 			border: 1px solid black;
-			padding: 5px;
+			padding: 10px;
+		}
+		.workHistoryTable {
 			width: 100%;
 		}
 	}
 
 	.bottom-content {
-		margin: 20px;
+		margin: 40px;
 	}
 
 	.contact-form {
